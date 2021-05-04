@@ -1,2 +1,2 @@
-# contactBookReact
+# react-store
 Created with CodeSandbox

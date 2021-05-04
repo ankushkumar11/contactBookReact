@@ -1,0 +1,9 @@
+.oneHeader {
+  background-color: powderblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.twoHeader {
+  margin: 10px;
+}
