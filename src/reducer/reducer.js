@@ -31,7 +31,7 @@ function counterReducer(state = contact, action) {
     case "ADD_CONTACT":
       return [...state, action.payload];
     case "EDIT_CONTACT":
-      return { value: state.value - 1 };
+      return [...action.payload];
     case "DELETE_CONTACT":
       console.log(action.payload);
       return [...action.payload];

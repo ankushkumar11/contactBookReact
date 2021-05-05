@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import "./Body.css";
 
 function Body() {
@@ -17,7 +18,9 @@ function Body() {
         <td className="oneBody">{pqr.mobile}</td>
         <td className="oneBody">{pqr.address}</td>
         <td className="oneBody">
-          <button>Edit</button>
+          <button>
+            <Link to={"/editContact/" + i}>Edit</Link>
+          </button>
         </td>
         <td className="oneBody">
           <button onClick={() => del(i)}>Delete</button>

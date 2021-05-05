@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import AddContact from "./components/AddContact";
+import EditContact from "./components/EditContact";
 
 export default function App() {
   let store = createStore(counterReducer);
@@ -18,6 +19,9 @@ export default function App() {
           </Route>
           <Route path="/addContact">
             <AddContact></AddContact>
+          </Route>
+          <Route path="/editContact/:id">
+            <EditContact></EditContact>
           </Route>
         </Switch>
       </Router>
