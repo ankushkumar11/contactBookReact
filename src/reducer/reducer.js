@@ -30,8 +30,11 @@ function counterReducer(state = contact, action) {
   switch (action.type) {
     case "ADD_CONTACT":
       return [...state, action.payload];
-    case "counter/decremented":
+    case "EDIT_CONTACT":
       return { value: state.value - 1 };
+    case "DELETE_CONTACT":
+      console.log(action.payload);
+      return [...action.payload];
     default:
       return state;
   }

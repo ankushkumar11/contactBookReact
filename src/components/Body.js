@@ -3,10 +3,11 @@ import "./Body.css";
 
 function Body() {
   const abc = useSelector((state) => state);
-  const dispatch=useDispatch()
+  const dispatch = useDispatch();
 
   function del(i) {
-    
+    abc.splice(i, 1);
+    dispatch({ type: "DELETE_CONTACT", payload: abc });
   }
 
   const list = abc.map((pqr, i) => (
