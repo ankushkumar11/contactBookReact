@@ -5,7 +5,7 @@ import "./Header.css";
 function Header() {
   return (
     <div className="oneHeader">
-      <h1>New Contact Book</h1>
+      <h1>Contact Book</h1>
       <button className="twoHeader">
         <Link to="/addContact">Add Contact</Link>
       </button>
